@@ -17,33 +17,40 @@ const FirmFacts: React.FC = () => {
           variant="default"
           style={{
             gridArea: "1 / 1 / 3 / 2",
+            justifyContent: "center",
           }}
         >
-          <Button variant="default">This is a one line button</Button>
+          <Button variant="icon">This is a two line button
+          that terminates with elipsis</Button>
         </Card>
         <Card
             variant="default"
             style={{
                 gridArea: "1 / 2 / 2 / 3",
+                justifyContent: "center",
             }}
         >
-            Card
+            <Button variant="icon">This is a two line button
+            that terminates with elipsis</Button>
         </Card>
         <Card
             variant="default"
             style={{
                 gridArea: "1 / 3 / 2 / 4",
+                justifyContent: "center",
             }}
         >
-            <Button variant="default">This is a one line button</Button>
+            <Button >This is a one line button</Button>
         </Card>
         <Card
             variant="default"
             style={{
                 gridArea: "1 / 4 / 2 / 5",
+                justifyContent: "center",
             }}
         >
-            <Button variant="default">This is a one line button</Button>
+            <Button variant="icon">This is a two line button
+            that terminates with elipsis</Button>
         </Card>
         <Card
             variant="default"
@@ -51,7 +58,11 @@ const FirmFacts: React.FC = () => {
                 gridArea: "2 / 2 / 3 / 3",
             }}
         >
-            <Button variant="default">This is a one line button</Button>
+            <Button variant="icon">This is a two line button
+            that terminates with elipsis</Button>
+            <span>
+                Initial
+            </span>
         </Card>
         <Card
             variant="default"
@@ -59,15 +70,23 @@ const FirmFacts: React.FC = () => {
                 gridArea: "2 / 3 / 3 / 4",
             }}
         >
-            <Button variant="default">This is a one line button</Button>
+            <Button variant="icon" disabled>This is a two line button
+            that terminates with elipsis</Button>
+            <span>
+                Disabled
+            </span>
         </Card>
         <Card
-            variant="default"
+            variant="border"
             style={{
                 gridArea: "2 / 4 / 3 / 5",
             }}
         >
-            <Button variant="default">This is a one line button</Button>
+            <Button variant="icon">This is a two line button
+            that terminates with elipsis</Button>
+            <span>
+                Hover
+            </span>
         </Card>
       </div>
     </div>

@@ -1,46 +1,59 @@
 .button {
-  padding: 10px 20px;
-  height: 68px;
-  border-radius: 70px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: 2px solid #2d3e4e;
-  overflow: hidden;
 
+  $ref: &;
+
+  align-items: center;
+  border-radius: 70px;
+  border: 2px solid #2d3e4e;
+  background-color: #2d3e4e;
+  color: #ffffff;
+  display: block;
+  font-family: Open Sans;
+  font-size: 19px;
+  font-weight: 600;
+  height: 68px;
+  line-height: 24px;
+  overflow: hidden;
+  overflow: hidden;
+  padding: 10px 20px;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 300px;
 
   &.default {
+    white-space: nowrap;
     background-color: #2d3e4e;
     color: #ffffff;
   }
 
   &.icon {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   &.hovered {
-    background-color: #07C06A;
+    background-color: #07c06a;
     color: #ffffff;
     border-color: #ffffff;
+
+    #{$ref}__icon {
+      svg {
+        * {
+          fill: #ffffff;
+        }
+      }
+    }
+
   }
 
-  &___icon {
+  &__icon {
     margin-right: 10px;
+    svg {
+      * {
+        fill: #ffffff;
+      }
+    }
   }
-
-  &__text {
-    display: flex;
-    align-items: center;
-    font-family: Open Sans;
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.5px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-
 }
