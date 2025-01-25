@@ -60,7 +60,7 @@ const FirmFacts: React.FC = () => {
         >
             <Button variant="icon">This is a two line button
             that terminates with elipsis</Button>
-            <span>
+            <span className="label">
                 Initial
             </span>
         </Card>
@@ -72,7 +72,7 @@ const FirmFacts: React.FC = () => {
         >
             <Button variant="icon" disabled>This is a two line button
             that terminates with elipsis</Button>
-            <span>
+            <span className="label">
                 Disabled
             </span>
         </Card>
@@ -84,7 +84,7 @@ const FirmFacts: React.FC = () => {
         >
             <Button variant="icon">This is a two line button
             that terminates with elipsis</Button>
-            <span>
+            <span className="label">
                 Hover
             </span>
         </Card>
