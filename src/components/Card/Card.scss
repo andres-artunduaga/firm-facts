@@ -9,24 +9,34 @@
     background-color: #ffffff;
     color: #000000;
     padding: 20px;
+    border: 15px solid #ffffff;
+
+    $ref: &;
 
     &:hover {
         cursor: pointer;
-    }
 
-    &.default {
-        &:hover {
+        &.default {
             background-color: #07C06A;
+            border-color: #07C06A;
             color: #ffffff;
         }
-    }
 
-    &.border {
-        &:hover {
+        &.border {
             border: 15px solid #07C06A;
-            padding: 5px;
         }
+
+        &.disabled {
+            color: #ffffff;
+            cursor: not-allowed;
+        }
+
     }
 
+    &.disabled {
+        background-color: #ffffff;
+        color: #ffffff;
+        cursor: not-allowed;
+    }
 
 }

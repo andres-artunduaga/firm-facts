@@ -69,6 +69,7 @@ const FirmFacts: React.FC = () => {
             style={{
                 gridArea: "2 / 3 / 3 / 4",
             }}
+            disabled
         >
             <Button variant="icon" disabled>This is a two line button
             that terminates with elipsis</Button>

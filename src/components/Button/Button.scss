@@ -64,6 +64,22 @@
 
   }
 
+  &.disabled {
+    background-color: #AAAAAA;
+    color: #ffffff;
+    border-color: #AAAAAA;
+    cursor: not-allowed;
+
+    #{$ref}__icon {
+      svg {
+        * {
+          fill: #ffffff;
+        }
+      }
+    }
+
+  }
+
   &__icon {
     margin-right: 10px;
     svg {
