@@ -1,6 +1,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  // Adding new vars here
+  --font-size: 16px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +24,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  // Adding vars here
+  font-size: var(--font-size);
 }
 
 * {
@@ -40,3 +44,4 @@ a {
     color-scheme: dark;
   }
 }
+

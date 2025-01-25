@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: #000000;
+
+    &.default {
+        padding: 20px;
+        &:hover {
+            background-color: #07C06A;
+            color: #ffffff;
+        }
+    }
+
+    &.border {
+        &:hover {
+            border: 15px solid #07C06A;
+            padding: 5px;
+        }
+    }
+
+
+}

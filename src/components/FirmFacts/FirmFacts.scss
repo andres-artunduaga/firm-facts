@@ -1,0 +1,37 @@
+.firm-facts {
+  display: flex;
+  flex-direction: column;
+  background-color: #2d3e4e;
+  color: #ffffff;
+  padding: 80px;
+  // Position
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  // Size
+  width: 100%;
+  min-width: 768px;
+  max-width: 1680px;
+
+  &__title {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+    &-text {
+      font-family: Open Sans;
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 66px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+  }
+
+  &__cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+}
