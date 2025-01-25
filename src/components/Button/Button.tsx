@@ -49,7 +49,7 @@ const Button: React.FC<ButtonProps> = ({
       {variant === "icon" && (
         <span className={`${BASE_CLASS}__icon`}>{getIcon()}</span>
       )}
-      {children}
+      <span className={`${BASE_CLASS}__text`}>{children}</span>
     </button>
   );
 };
